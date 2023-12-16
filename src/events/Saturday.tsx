@@ -4,7 +4,9 @@ import '../css/weekDays.css'
 import { useTranslation } from 'react-i18next';
 
 //react-icons
-import { MdEventAvailable } from "react-icons/md";
+import { MdCelebration } from "react-icons/md";
+import { PiMicrophoneStageFill } from "react-icons/pi";
+import { PiFilmSlateDuotone } from "react-icons/pi";
 
 const Saturday = () => {
 
@@ -19,12 +21,13 @@ const Saturday = () => {
             contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
             contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
             date="14:30"
-            icon={<MdEventAvailable />}
+            icon={<MdCelebration />}
             iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}>
             <h3 className="vertical-timeline-element-title">Closing Ceremony</h3>
             <p>{t('saturday.description1')}</p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
+            icon={<PiMicrophoneStageFill />}
             className="vertical-timeline-element"
             contentStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
             contentArrowStyle={{ borderRight: '7px solid  rgb(233, 30, 99)' }}
@@ -35,6 +38,7 @@ const Saturday = () => {
         </VerticalTimelineElement>
 
         <VerticalTimelineElement
+            icon={<PiFilmSlateDuotone />}
             className="vertical-timeline-element"
             contentStyle={{ background: 'rgb(76, 175, 80)', color: '#fff' }}
             contentArrowStyle={{ borderRight: '7px solid  rgb(76, 175, 80)' }}

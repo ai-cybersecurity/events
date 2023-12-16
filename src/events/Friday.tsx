@@ -4,7 +4,9 @@ import '../css/weekDays.css'
 import { useTranslation } from 'react-i18next';
 
 //react-icons
-import { MdEventAvailable } from "react-icons/md";
+import { SiAdobephotoshop } from "react-icons/si";
+import { FaBook } from "react-icons/fa6";
+import { FaBrain } from "react-icons/fa6";
 
 const Friday = () => {
 
@@ -19,12 +21,13 @@ const Friday = () => {
             contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
             contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
             date="14:30"
-            icon={<MdEventAvailable />}
+            icon={<FaBrain />}
             iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}>
             <h3 className="vertical-timeline-element-title">Brain Ring 2.0</h3>
             <p>{t('friday.description1')}</p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
+            icon={<SiAdobephotoshop />}
             className="vertical-timeline-element"
             contentStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
             contentArrowStyle={{ borderRight: '7px solid  rgb(233, 30, 99)' }}
@@ -35,6 +38,7 @@ const Friday = () => {
         </VerticalTimelineElement>
 
         <VerticalTimelineElement
+            icon={<FaBook />}
             className="vertical-timeline-element"
             contentStyle={{ background: 'rgb(76, 175, 80)', color: '#fff' }}
             contentArrowStyle={{ borderRight: '7px solid  rgb(76, 175, 80)' }}
